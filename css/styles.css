@@ -641,6 +641,21 @@ progress {
   margin-left: auto;
 }
 
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotateAnimation 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
